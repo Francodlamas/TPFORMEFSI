@@ -1,24 +1,36 @@
-<div>
-    <form method="get" name="formulario" >
-    
-    <p>Matematica</p><input type="number" class="custom-range" min="0" max="10" id="Matematica">
-    <p>Lengua</p><input type="number" class="custom-range" min="0" max="10" id="Lengua">
-    <p>EFSI</p><input type="number" class="custom-range" min="0" max="10" id="EFSI">
-    <br><br><br><br>
+<html>
+<head>
 
-    <input type="submit" value="Enviar" onclick="obtenerValores()"><br>
-    <p id="Matematica"></p> 
-    <p id="Lengua"></p> 
-    <p id="EFSI"></p> 
-    
-    </form>
+</head>
+
+<body>
 
     <div>
+        <form method="get" name="formulario" id="formulario">
         
+        <p>Matematica</p><input type="text" class="custom-range" min="0" max="10"name="Matematica" id="Matematica">
+        <p>Lengua</p><input type="text" class="custom-range" min="0" max="10"name="Lengua" id="Lengua">
+        <p>EFSI</p><input type="text" class="custom-range" min="0" max="10"name="EFSI" id="EFSI">
+        <br><br><br><br>
+        <button type="button" value="promedio" onclick="promedio()">promedio</button><br>
+        <button type="button" value="Enviar" onclick="obtenerValores()">Enviar</button><br>
+        <button type="button" value="Mayor" onclick="MayorNota()">Mayor Nota</button><br>
+     
+        
+        </form>
+    
+        <div>
+            <p id="1"></p>
+            <p id="2"></p>
+            <p id="3"></p>
+            <p id="Prom"></p>
+        </div>
     </div>
-</div>
-
-
-
-
-
+    
+    
+    
+    
+    
+<script src="Controller.js"></script>
+</body>
+</html>
