@@ -32,13 +32,13 @@ function promedio() {
     let elemento3=parseInt(document.getElementById("EFSI").value); 
     let promedio=(elemento3+elemento2+elemento1)/3;   
     if(elemento1 > 10 || elemento1 < 1){
-        alert('Error, usted debe colocar en matemática un valor mayor a 1 y menor que 10');
+        alert('Error al colocar un numero entre 1 y 10');
     }
     else if(elemento2 > 10 || elemento2 < 1){
-        alert('Error, usted debe colocar en lengua un valor mayor a 1 y menor que 10');
+        alert('Error al colocar un numero entre 1 y 10');
     }
     else if(elemento3 > 10 || elemento3 < 1){
-        alert('Error, usted debe colocar en EFSI un valor mayor a 1 y menor que 10');
+        alert('Error al colocar un numero entre 1 y 10');
     }else{    document.getElementById("Promedio").innerHTML=promedio;}
 
     if(promedio>=6 && promedio <=10){
